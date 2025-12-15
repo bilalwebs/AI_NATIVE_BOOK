@@ -1,0 +1,31 @@
+# Application Constants
+
+# Mode constants
+BOOK_WIDE_MODE = "book-wide"
+SELECTED_TEXT_MODE = "selected-text"
+
+# Error codes
+INSUFFICIENT_CONTEXT_ERROR = "INSUFFICIENT_CONTEXT"
+INVALID_MODE_ERROR = "INVALID_MODE"
+VALIDATION_ERROR = "VALIDATION_ERROR"
+INTERNAL_ERROR = "INTERNAL_ERROR"
+
+# Default values
+DEFAULT_TOP_K_RETRIEVAL = 5
+DEFAULT_MAX_TOKENS = 400
+DEFAULT_CHUNK_SIZE = 350
+DEFAULT_CHUNK_OVERLAP = 50
+
+# Response messages
+INSUFFICIENT_CONTEXT_MESSAGE = "The answer is not available in the selected text."
+FALLBACK_UNANSWERABLE_MESSAGE = "I cannot answer that question as it's not covered in the book content."
+
+# Timeouts and limits
+EMBEDDING_GENERATION_TIMEOUT = 200  # ms
+DEFAULT_RESPONSE_TIMEOUT = 30  # seconds
+MAX_CONCURRENT_USERS = 100
+
+# Validation rules
+MAX_SEGMENT_TOKENS = 400
+MIN_SEGMENT_TOKENS = 50
+MAX_SESSION_AGE_HOURS = 24
