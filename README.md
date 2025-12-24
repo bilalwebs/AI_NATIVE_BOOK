@@ -1,6 +1,6 @@
-# AI Humanoid Book RAG
+# AI Native Book
 
-A comprehensive textbook and research repository on Physical AI & Humanoid Robotics with Retrieval-Augmented Generation (RAG) capabilities.
+A comprehensive AI Native Book with Retrieval-Augmented Generation (RAG) capabilities.
 
 ## Tech Stack
 
@@ -12,9 +12,9 @@ A comprehensive textbook and research repository on Physical AI & Humanoid Robot
 
 ## Features
 
-- Interactive AI assistant for textbook content with RAG capabilities
+- Interactive AI assistant for book content with RAG capabilities
 - Retrieval-Augmented Generation for accurate and context-aware responses
-- Comprehensive coverage of Physical AI & Humanoid Robotics concepts
+- Comprehensive coverage of AI Native concepts and implementations
 - Modern chat interface with typing indicators
 - Responsive design for desktop and mobile
 - Clean, professional documentation layout
@@ -57,13 +57,13 @@ npm run serve
 - `docs/` - Documentation files
 - `specs/` - Project specifications
 - `rag/` - RAG system implementation
-- `data/` - Research papers and textbook content
+- `data/` - Book content and research materials
 
 ## RAG Architecture
 
 The Retrieval-Augmented Generation system combines:
 
-- **Vector Database**: For efficient storage and retrieval of textbook content
+- **Vector Database**: For efficient storage and retrieval of book content
 - **Embedding Model**: To convert text to high-dimensional vectors
 - **Language Model**: To generate contextually relevant responses
 - **Retrieval Module**: To fetch relevant information from the knowledge base
