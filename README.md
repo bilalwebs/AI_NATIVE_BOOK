@@ -57,16 +57,28 @@ npm run serve
 - `docs/` - Documentation files
 - `specs/` - Project specifications
 - `rag/` - RAG system implementation
+  - `rag/pipeline.py` - Main pipeline orchestrator
+  - `rag/cli.py` - Command line interface
+  - `rag/crawling/` - URL crawling and content extraction
+  - `rag/processing/` - Text chunking and embedding generation
+  - `rag/storage/` - Vector storage and search in Qdrant Cloud
+  - `rag/config/` - Configuration management
+  - `rag/utils/` - Utility functions
+  - `rag/examples/` - Usage examples
+  - `rag/tests/` - Unit tests
 - `data/` - Book content and research materials
 
 ## RAG Architecture
 
 The Retrieval-Augmented Generation system combines:
 
-- **Vector Database**: For efficient storage and retrieval of book content
-- **Embedding Model**: To convert text to high-dimensional vectors
+- **Crawling Module**: For crawling Docusaurus book URLs and extracting clean text content
+- **Processing Module**: For chunking text and generating embeddings using Cohere models
+- **Vector Database**: For efficient storage and retrieval in Qdrant Cloud
+- **Embedding Model**: To convert text to high-dimensional vectors using Cohere
 - **Language Model**: To generate contextually relevant responses
-- **Retrieval Module**: To fetch relevant information from the knowledge base
+- **Retrieval Module**: To fetch relevant information from the knowledge base through similarity search
+- **Pipeline Orchestration**: To coordinate the complete workflow from URL ingestion to storage
 
 ## Contributing
 
