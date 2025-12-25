@@ -66,6 +66,13 @@ npm run serve
   - `rag/utils/` - Utility functions
   - `rag/examples/` - Usage examples
   - `rag/tests/` - Unit tests
+- `backend/` - FastAPI RAG chatbot backend
+  - `backend/main.py` - FastAPI application entry point
+  - `backend/api/` - API route definitions
+  - `backend/models/` - Pydantic models
+  - `backend/services/` - Business logic and external service integration
+  - `backend/config/` - Configuration and settings
+  - `backend/utils/` - Utility functions
 - `data/` - Book content and research materials
 
 ## RAG Architecture
