@@ -47,7 +47,7 @@ class RAGService:
 
             response = self.cohere_client.embed(
                 texts=[query],
-                model="embed-english-v3.0"  # Using the same model as the pipeline
+                model=settings.RAG_EMBEDDING_MODEL  # Using the configured embedding model
             )
             query_embedding = response.embeddings[0]
 

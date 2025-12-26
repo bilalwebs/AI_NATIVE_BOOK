@@ -10,6 +10,12 @@ import os
 import asyncio
 from contextlib import asynccontextmanager
 
+import sys
+import os
+# Add the project root to the Python path to allow absolute imports
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
+
 from backend.api.chat import router as chat_router
 from backend.config.settings import settings
 from backend.utils.logger import setup_logger

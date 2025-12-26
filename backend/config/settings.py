@@ -31,6 +31,7 @@ class Settings(BaseSettings):
     RAG_TOP_K: int = 5
     RAG_SCORE_THRESHOLD: float = 0.5
     RAG_MAX_CONTEXT_LENGTH: int = 2000
+    RAG_EMBEDDING_MODEL: str = "embed-english-v3.0"
 
     class Config:
         env_file = ".env"
