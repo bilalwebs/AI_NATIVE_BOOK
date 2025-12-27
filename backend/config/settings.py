@@ -33,6 +33,9 @@ class Settings(BaseSettings):
     RAG_MAX_CONTEXT_LENGTH: int = 2000
     RAG_EMBEDDING_MODEL: str = "embed-english-v3.0"
 
+    # Book configuration
+    BOOK_START_URL: str = "http://localhost:3000/"
+
     class Config:
         env_file = ".env"
         case_sensitive = True
